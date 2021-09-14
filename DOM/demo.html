@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+    <h1 id ="title">Hello, Dom</h1>
+    <ul>
+        <li>DOM Methods Example</li>
+        <li>DOM Properties Example</li>
+        <button onClick="alert('Message')">Click me</button>
+        <input />
+    </ul>
+    <script>
+        function collectListItems() {
+            const liElements = [document.getElementByTagName('li')];
+            const elements = liElements.map(e => e.textContent);
+            document.getElementById('result').value = elementText.join('\n');
+        }
+        console.log(collectListItems());
+    </script>
+</body>
+</html>
